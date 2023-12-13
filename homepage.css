@@ -1,0 +1,477 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbfbfd;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.navbar {
+    background-color: #fbfbfd;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(159, 159, 155, 0.4);
+    -webkit-box-shadow: 0 2px 5px rgba(159, 159, 155, 0.4);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.navul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    list-style-type: none;
+    padding: 30px;
+}
+
+.nav {
+    text-decoration: none;
+    color: #1d1c1e;
+    font-weight: 400;
+    letter-spacing: 1px;
+    height: 10px;
+    padding-bottom: 25px;
+}
+
+.nav::after {
+    content: ' ';
+    display: block;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #1d1c1e;
+    width: 0px;
+    transition: width 0.1s;
+}
+
+.issues {
+    width: 110px;
+}
+
+.home:hover::after {
+    width: 49px;
+}
+
+.issues:hover::after {
+    width: 109px;
+}
+
+.aboutus:hover::after {
+    width: 81px;
+}
+
+.contactus:hover::after {
+    width: 95px;
+}
+
+.navli {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+/* Starter */
+
+.starter {
+    display: flex;
+    background: linear-gradient(#429f3f, #429f3f, #429f3f, #429f3f, #378534);
+    background-color: #378534;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    bottom: -90px;
+}
+
+.starterimg {
+    width: 700px;
+    height: 450px;
+}
+
+.takecare {
+    display: flex;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fbfbfd;
+    padding-left: 70px;
+    margin-top: -50px;
+    margin-bottom: 45px;
+}
+
+.quotes {
+    margin-top: 100px;
+}
+
+.panorama1 {
+    margin-left: 170px;
+}
+
+.quote1 {
+    color: #fbfbfd;
+    font-weight: 300;
+    padding-top: 55px;
+    padding-left: 70px;
+}
+
+.help {
+    position: relative;
+    text-decoration: none;
+    color: #fbfbfd;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 70px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.help::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fbfbfd;
+    width: 0px;
+    transition: width ease-in 0.3s;
+}
+
+.help:hover::after {
+    width: 100%;
+}
+
+/* Major Problems */
+
+.card {
+    width: 300px;
+    height: 500px;
+}
+
+.majorproblems {
+    margin-top: 100px;
+    height: 700px;
+    width: 100%;
+    background-color: #3e3c3c23;
+}
+
+.identify {
+    font-size: 50px;
+    color: #2a6728;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.problems {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.pollution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pollution:hover {
+    transform: scale(1.03);
+}
+
+.pollutiontitle {
+    font-size: 40px;
+    font-weight: 500;
+    color: #353536;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.title1 {
+    background-color: #fbfbfd;
+    padding-bottom: 40px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0.125)), url(img/parallax1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.pollutionphoto {
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    align-self: center;
+}
+
+.fossilp {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.littering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.littering:hover {
+    transform: scale(1.03);
+}
+
+.litteringtitle {
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #353536;
+}
+
+.litteringphoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.litteringp {
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Water Pollution */
+
+.waterpollution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.waterpollution:hover {
+    transform: scale(1.03);
+}
+
+.watertitle {
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #353536;
+}
+
+.waterphoto {
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    align-self: center;
+}
+
+.waterp {
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Footer */
+
+.connected {
+    background-color: #f1efe9ff;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    border-bottom: solid 2px #e0e0e0ff;
+    display: flex;
+    align-items: center;
+}
+
+.connectedp {
+    color: #7a7a7aff;
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    margin-left: 402px;
+    margin-bottom: -5px;
+}
+
+.social {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.imgli {
+    list-style-type: none;
+}
+
+.information {
+    width: 100%;
+    height: 240px;
+    background-color: #f1efe9ff;
+}
+
+.footercarts {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    right: 50px;
+}
+
+/* Footer Products */
+
+
+.companyproducts {
+    margin-left: 100px;
+}
+
+.products {
+    color: #7a7a7aff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.name {
+    color: #7a7a7aff;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.productli {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    color: #7a7a7aff;
+    font-weight: 500;
+    transition: padding-left 0.3s;
+    width: fit-content;
+}
+
+.productli:hover {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.productul {
+    padding-top: 15px;
+    width: 150px;
+}
+
+
+/* Footer-Links */
+
+
+.usefullinks {
+    margin-left: 100px;
+}
+
+.footer-links {
+    color: #7a7a7aff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.linksli {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    color: #7a7a7aff;
+    font-weight: 500;
+    transition: padding-left 0.3s;
+    width: fit-content;
+}
+
+.linksli:hover {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.linkul {
+    padding-top: 15px;
+    width: 150px;
+}
+
+/* Find Us  */
+
+
+.findus {
+    margin-left: 100px;
+}
+
+.find-us {
+    color: #7a7a7aff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.findli {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 50px;
+    color: #7a7a7aff;
+    font-weight: 500;
+    transition: padding-left 0.3s;
+    width: fit-content;
+}
+
+.findli:hover {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.findul {
+    padding-top: 15px;
+    width: 250px;
+}
+
+.copyright {
+    width: 100%;
+    height: 50px;
+    background-color: #7a7a7aff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0ff;
+    font-weight: 200;
+}
