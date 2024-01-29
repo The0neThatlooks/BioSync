@@ -1,1 +1,1 @@
-Hello! This is my first ever project naed BioSync, I hope you like it. Any feedback would be appreciated.git add README.md
+Hello! This is my first ever project named BioSync, I hope you like it. Any feedback would be appreciated.
